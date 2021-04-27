@@ -1,4 +1,4 @@
-﻿namespace Livesplit.UI.Components
+﻿namespace LiveSplit.UI.Components
 {
     partial class PacepalSettings
     {
