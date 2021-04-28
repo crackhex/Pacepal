@@ -53,7 +53,6 @@ namespace LiveSplit.UI.Components
 
         public void Start()
         {
-
             ContextMenuControls.Clear();
             ContextMenuControls.Add("Stop Pacing", Stop);
         }
@@ -66,39 +65,39 @@ namespace LiveSplit.UI.Components
 
         public void DrawHorizontal(Graphics g, LiveSplitState state, float height, Region clipRegion)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void DrawVertical(Graphics g, LiveSplitState state, float width, Region clipRegion)
         {
-            throw new NotImplementedException();
+           
         }
 
         public Control GetSettingsControl(LayoutMode mode)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public XmlNode GetSettings(XmlDocument document)
         {
-            throw new NotImplementedException();
+            return null;
         }
 
         public void SetSettings(XmlNode settings)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Update(IInvalidator invalidator, LiveSplitState state, float width, float height, LayoutMode mode)
         {
-            throw new NotImplementedException();
+            
         }
 
         public void Dispose()
         {
-            throw new NotImplementedException();
+            
         }
     }
 
-    }
+    
 }
