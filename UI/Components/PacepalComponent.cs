@@ -19,25 +19,14 @@ namespace LiveSplit.UI.Components
         protected ITimeFormatter DeltaFormatter { get; set; }
         protected ITimeFormatter SplitTimeFormatter { get; set; }
 
+        public float PaddingTop => 0;
+        public float PaddingBottom => 0;
+        public float PaddingLeft => 0;
+        public float PaddingRight => 0;
         public string ComponentName => "Pacepal Plugin";
 
         public IDictionary<string, Action> ContextMenuControls { get; protected set; }
 
-        public float HorizontalWidth => throw new NotImplementedException();
-
-        public float MinimumHeight => throw new NotImplementedException();
-
-        public float VerticalHeight => throw new NotImplementedException();
-
-        public float MinimumWidth => throw new NotImplementedException();
-
-        public float PaddingTop => throw new NotImplementedException();
-
-        public float PaddingBottom => throw new NotImplementedException();
-
-        public float PaddingLeft => throw new NotImplementedException();
-
-        public float PaddingRight => throw new NotImplementedException();
 
         public PacepalComponent(LiveSplitState state)
         {
@@ -63,15 +52,21 @@ namespace LiveSplit.UI.Components
             ContextMenuControls.Add("Start Pacing", Start);
         }
 
-        public void DrawHorizontal(Graphics g, LiveSplitState state, float height, Region clipRegion)
-        {
-            
-        }
-
         public void DrawVertical(Graphics g, LiveSplitState state, float width, Region clipRegion)
         {
-           
         }
+
+        public void DrawHorizontal(Graphics g, LiveSplitState state, float height, Region clipRegion)
+        {
+        }
+
+        public float VerticalHeight => 0;
+
+        public float MinimumWidth => 0;
+
+        public float HorizontalWidth => 0;
+
+        public float MinimumHeight => 0;
 
         public Control GetSettingsControl(LayoutMode mode)
         {
